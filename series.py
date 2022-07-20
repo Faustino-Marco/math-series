@@ -7,7 +7,9 @@ def fibonacci(n):
     Uses recursion to add two immediately preceding fibonacci numbers
     base case: n == 0 and n == 1 both return 1
     """
-    if n == 0 or n == 1:
+    if n == 0:
+        return 0
+    if n == 1:
         return 1
     else:
         return fibonacci(n-1) + fibonacci(n-2)
@@ -36,15 +38,11 @@ def sum_series(n, a=1, b=1):
     respectively, so as to imitate the fibonacci series.
     New unique series created depending on base case selections in function params.
     """
-    # print(a)
-    # print(b)
     if n == 0:
         return a
     if n == 1:
         return b
     else:
-        # print(b)
-        # print(n)
         return sum_series(n-1, a, b) + sum_series(n-2, a, b)
 
 

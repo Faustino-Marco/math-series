@@ -2,15 +2,15 @@ from series import fibonacci as fib
 from series import lucas as luc
 from series import sum_series as sum
 
-def test_fib_input_1():
-    actual = fib(1)
-    expected = 1
+def test_fib_input_0():
+    actual = fib(0)
+    expected = 0
     assert actual == expected
 
 
-def test_fib_9():
-    actual = fib(9)
-    expected = 55
+def test_fib_1():
+    actual = fib(1)
+    expected = 1
     assert actual == expected
 
 
@@ -20,9 +20,9 @@ def test_luc_0():
     assert actual == expected
 
 
-def test_luc_8():
-    actual = luc(8)
-    expected = 47
+def test_luc_1():
+    actual = luc(1)
+    expected = 1
     assert actual == expected
 
 
